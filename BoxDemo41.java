@@ -1,3 +1,6 @@
+/*Dynamic method dispatch:
+*Dynamic method dispatch is the mechanism by which a call to an overriden method is resovled at
+*run time*/
 class A 
 {
     void callme()
