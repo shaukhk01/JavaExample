@@ -3,6 +3,7 @@ class ElectricalGuitar
     String brand;
     int numOfPickups;
     boolean rockStarUser;
+    double Height;
 
     public String getBrand()
     {
@@ -28,11 +29,22 @@ class ElectricalGuitar
     {
         rockStarUser = b;
     }
+    public double getHeight()
+    {
+        return Height;
+    }
+    public void setHeight(double h)
+    {
+        if(h > 6)//condition required
+            Height = h;
+    }
+
     void showinfo()
     {
         System.out.println(getBrand());
         System.out.println(getnumOfPickups());
         System.out.println(getrock());
+        System.out.println(getHeight());
     }
 }
 class Execute
@@ -43,8 +55,8 @@ class Execute
         ob.setBrand("Holex");
         ob.setnumOfPickups(3);
         ob.setrock(true);
+        ob.setHeight(5);
         ob.showinfo();
-
 
     }
 }
