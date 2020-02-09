@@ -14,3 +14,9 @@ class InputTest
        System.out.println("Hello, "+name +".Next year,you ll be"+age);
     }
 }
+/*Scanner is class which
+ * is not suitable for
+ * reading a password from
+ * a console Because input
+ * is plainly visible to anyone
+ */
