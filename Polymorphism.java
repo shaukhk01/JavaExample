@@ -1,3 +1,8 @@
+/*Polymorphism:
+ *A DeliveryBoys[Postman]Deliverd Letter,
+ *A DeliveryBoYS[Zamato]Deliverd Fooood
+ *A DeliveryBoys[flipkart]Deliverd parsal
+ */
 package com.journaldev;
 import java.util.Random;
 
