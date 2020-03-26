@@ -1,21 +1,28 @@
 public class UnionArray
 {
+    static int[] inter=new int[5];
+    static int k=0;
     public static void printUnion(int A[],int B[],int l1,int l2)
     {
         int i=0,j=0;
         while(i<l1 && j<l2)
         {
             if(A[i]<B[j])//Because of we want result in sorted order using merge operation
-                System.out.println(A[i++]+" ");
+                System.out.print(A[i++]+" ");
             else if(B[j]<A[i])
-                System.out.println(B[j++]);
+                System.out.print(B[j++]+" ");
             else
             {
-                System.out.println(B[j++]+" ");//using for Union
+                inter[k++] = B[j];//Intersection implementation
+                System.out.print(B[j++]+" ");//using for Union
                 i++;
             }
-
         }
+        System.out.println();
+        System.out.println("Intersection--");
+        for(int r=0;r<inter.length;r++)
+            if(inter[r]!=0)
+            System.out.print(inter[r]+" ");
     }
     public static void main(String[]args)
     {
